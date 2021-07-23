@@ -1,0 +1,63 @@
+{
+  "name": "node_dev",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "dev",
+	"workspaceMount": "src=${localWorkspaceFolder},dst=/workdir,type=bind",
+	"workspaceFolder": "/workdir",
+	
+  "settings": {
+    "bracket-pair-colorizer-2.colors": [
+      "Gold",
+      "Orchid",
+      "LightSkyBlue"
+    ],
+    
+    "editor.autoClosingBrackets": "always",
+    "editor.rulers": [ 80 ],
+		"editor.tabSize": 2,
+		"editor.insertSpaces": true,
+		"editor.detectIndentation": false,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+		
+    "eslint.format.enable": true,
+		"eslint.validate": ["javascript"],
+    
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000,
+    "files.exclude": {
+      "**/.git": true,
+			"**/*.pyc": true,
+      "**/.svn": true,
+      "**/.hg": true,
+      "**/CVS": true,
+      "**/.DS_Store": true,
+      "**/__pycache__": true,
+      ".eslintrc.json":true,
+      ".idea": true,
+			"venv":true,
+			".vscode":true
+		},
+    
+    "gitlens.codeLens.enabled": false,
+    
+    "terminal.integrated.shell.linux": "/bin/bash",
+		"terminal.integrated.inheritEnv": true,
+		
+    "workbench.editor.enablePreview": true
+	},
+
+	"extensions": [
+		"coenraads.bracket-pair-colorizer-2",
+        "eg2.vscode-npm-script",
+        "christian-kohler.npm-intellisense",
+        "dbaeumer.vscode-eslint",
+        "formulahendry.auto-close-tag",
+        "mikestead.dotenv",
+        "christian-kohler.path-intellisense",
+        "davidanson.vscode-markdownlint"
+	],
+
+	"overrideCommand": false
+}

@@ -1,0 +1,17 @@
+# The packages in the groups are ordered alphabetically.
+
+# Dialog
+apt-utils
+dialog
+
+# Dev tools
+build-essential
+ca-certificates
+curl
+git
+vim
+wget
+
+# Nodejs tools
+nodejs
+npm
